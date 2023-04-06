@@ -13,6 +13,8 @@ namespace TrabajoPractico2 {
         public class Table {
             private readonly List<string> _headers;
             private readonly List<List<string>> _rows;
+            public bool IsSelectable { get; set; }
+            public List<int> NonNumericColumns;
 
             /// <summary>
             /// Crea una nueva instancia de la clase Table.
@@ -20,8 +22,14 @@ namespace TrabajoPractico2 {
             public Table() {
                 _headers = new List<string>();
                 _rows = new List<List<string>>();
-            }
+                NonNumericColumns = new List<int>();
 
+            }
+            public void SetColumnsAsNonNumeric(params int[] cols) {
+                foreach(int col in cols) {
+                    NonNumericColumns.Add(col);
+                }
+            }
             /// <summary>
             /// Agrega un encabezado a la tabla.
             /// </summary>
@@ -58,19 +66,26 @@ namespace TrabajoPractico2 {
             /// <returns>Una cadena que contiene el código HTML para la tabla.</returns>
             public override string ToString() {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine("<table>");
+                sb.Append("<table class='mdl-data-table mdl-js-data-table ");
+                if (IsSelectable) sb.Append("mdl-data-table--selectable");
+                sb.Append(" mdl-shadow--2dp'>");
                 sb.AppendLine("<thead>");
                 sb.AppendLine("<tr>");
+                int col = 0; 
                 foreach (string header in _headers) {
-                    sb.AppendFormat("<th>{0}</th>", header);
+                    string key = NonNumericColumns.Contains(col) ? "mdl-data-table__cell--non-numeric" : "";
+                    sb.AppendFormat("<th class='{1}'>{0}</th>", header, key);
+                    col++;
                 }
                 sb.AppendLine("</tr>");
                 sb.AppendLine("</thead>");
                 sb.AppendLine("<tbody>");
                 foreach (List<string> row in _rows) {
                     sb.AppendLine("<tr>");
+                    col = 0;
                     foreach (string value in row) {
-                        sb.AppendFormat("<td>{0}</td>", value);
+                        string key = NonNumericColumns.Contains(col) ? "mdl-data-table__cell--non-numeric" : "";
+                        sb.AppendFormat("<td class='{1}'>{0}</td>", value, key);
                     }
                     sb.AppendLine("</tr>");
                 }

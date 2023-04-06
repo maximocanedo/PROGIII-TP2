@@ -35,6 +35,8 @@ namespace TrabajoPractico2 {
             table.AddRow(segundoProducto, cantProducto2);
             table.AddRow("Total", cantidadTotal);
 
+            table.SetColumnsAsNonNumeric(0);
+
             // Muestra la tabla en el control Tabla.
             Tabla.Text = table.ToString();
         }
