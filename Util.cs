@@ -16,6 +16,11 @@ namespace TrabajoPractico2 {
             ScriptManager.RegisterStartupScript(control, control.GetType(), "Alerta", $"alert('{message}');", true);
         }
 
+        /// <summary>
+        /// Comprueba si los valores dados como cadenas de texto pueden ser convertidos a números enteros.
+        /// </summary>
+        /// <param name="strings">Las cadenas de texto a comprobar</param>
+        /// <returns>Verdadero si todas las cadenas de texto pueden ser convertidas a números enteros; de lo contrario, falso.</returns>
         public static bool ParseableAsInteger(params string[] strings) {
             bool res = true;
             foreach(string str in strings) {
