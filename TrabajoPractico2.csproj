@@ -80,6 +80,7 @@
     <Compile Include="Ejercicio5.aspx.designer.cs">
       <DependentUpon>Ejercicio5.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Element.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
