@@ -17,9 +17,9 @@ namespace TrabajoPractico2 {
             int cantProducto2;
             if (!int.TryParse(TextBox2.Text, out cantProducto1) || !int.TryParse(TextBox4.Text, out cantProducto2)) {
                 // El valor del cuadro de texto no se puede convertir a un número entero.
-                Element.Alert("El valor ingresado no se puede convertir a un número entero. ", this);
+                Util.Alert("El valor ingresado no se puede convertir a un número entero. ", this);
                 return;
-            }
+            } 
 
             // Calcular la cantidad total de productos.
             int cantidadTotal = cantProducto1 + cantProducto2;

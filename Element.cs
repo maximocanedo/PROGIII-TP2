@@ -80,9 +80,7 @@ namespace TrabajoPractico2 {
             }
         }
 
-        public static void Alert(string message, Control control) {
-            ScriptManager.RegisterStartupScript(control, control.GetType(), "Alerta", $"alert('{message}');", true);
-        }
+       
 
     }
 }
