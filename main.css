@@ -1,4 +1,5 @@
-﻿body {
+﻿@import url('mdl/fonts.css');
+body {
 }
 form {
     width: 100vw;
@@ -17,7 +18,11 @@ form .row {
     flex-direction: row;
     padding: 15px;
 }
-form .mdl-textfield {
+form .mdl-textfield:not(.make-bigger) {
     width: auto !important;
     margin: auto 10px;
+}
+form .mdl-textfield.make-bigger {
+    width: auto !important;
+    min-width: 240px;
 }
