@@ -33,7 +33,7 @@ namespace TrabajoPractico2 {
             float cm = getCantidadDeMemoriaPrice();
             float ac = getAccesoriosPrice();
             float precioFinal = cm + ac;
-            lbResultado.Text = "<br />El precio final es de <b>$" + precioFinal + "</b>.";
+            lbResultado.Text = "<br />El precio final es de <br /><h5>$" + precioFinal + "</h5>.";
         }
     }
 }
