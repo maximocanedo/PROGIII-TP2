@@ -33,10 +33,10 @@
             </label>
         </div>
         <div class="row">
-             <asp:Button ID="btnGenerarTabla" runat="server" OnClick="Button1_Click" Text="Generar tabla" />
+            <asp:Button ID="btnGenerarTabla" runat="server" OnClick="Button1_Click" Text="Generar tabla" />
         </div>
         <div class="row">
-             <asp:Label ID="Tabla" runat="server"></asp:Label>
+            <asp:Label ID="Tabla" runat="server"></asp:Label>
         </div>
     </form>
 </body>

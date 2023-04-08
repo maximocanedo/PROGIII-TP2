@@ -3,6 +3,7 @@
     transition: all 0.2s;
     font-family: Consolas, monospace, sans-serif;
 }
+
 form {
     width: auto;
     height: auto;
@@ -10,18 +11,17 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-form .row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
 
-}
+    form .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
 
 label.tb {
     display: flex;
@@ -31,19 +31,21 @@ label.tb {
     padding: 0px 0px;
     margin: 0px 12px;
 }
-label.tb span {
-    margin: 4px;
-}
 
-label.tb input {
-    width: calc(100% - 0px);
-    border: 1px solid black;
-    height: 24px;
+    label.tb span {
+        margin: 4px;
+    }
 
-}
+    label.tb input {
+        width: calc(100% - 0px);
+        border: 1px solid black;
+        height: 24px;
+    }
+
 button:focus, input:focus {
     outline: 1px solid black;
 }
+
 button, input[type="submit"] {
     border: 1px solid black;
     color: black;
@@ -51,20 +53,23 @@ button, input[type="submit"] {
     height: 32px;
     padding: 0px 10px;
 }
+
     input[type="submit"]:hover, button:hover {
         background: #999;
     }
+
     input[type="submit"]:active, button:active {
         background: black;
         color: white
     }
-    table {
-        border-collapse: collapse;
-    }
 
-    td, th {
-        border-collapse: collapse;
-        border: 1px solid #CCC;
-        border-spacing: 0px;
-        padding: 4px 8px 4px 4px;
-    }
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+    border-spacing: 0px;
+    padding: 4px 8px 4px 4px;
+}
