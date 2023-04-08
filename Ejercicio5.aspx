@@ -6,33 +6,25 @@
 <head runat="server">
     <title></title>
     <link href="Ejercicio5.css" rel="stylesheet" />
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <script src="mdl/material.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server" class="main-container">
-        <h3>Elija su configuración</h3>
-        <label for="ddlCantidadMemoria">
-            <span>Seleccione cantidad de memoria deseada: </span>
-            <br />
+        <h1>Elija su configuración</h1>
+        <label for="ddlCantidadMemoria">Seleccione cantidad de memoria deseada:</label>
             <br />
             <asp:DropDownList ID="ddlCantidadMemoria" runat="server" AutoPostBack="True">
                 <asp:ListItem Value="200">2 GB</asp:ListItem>
                 <asp:ListItem Value="375">4 GB</asp:ListItem>
                 <asp:ListItem Value="500">6 GB</asp:ListItem>
             </asp:DropDownList>
-&nbsp;</label><br />
         <br />
-        <label for="cblAccesorios">
-            <span>Seleccione accesorios: </span>
+        <label for="cblAccesorios">Seleccione accesorios:</label>
             <br />
             <asp:CheckBoxList ID="cblAccesorios"  runat="server" AutoPostBack="True">
                 <asp:ListItem Value="2000,50">Monitor LCD</asp:ListItem>
                 <asp:ListItem Value="550,50">HD 500 GB</asp:ListItem>
                 <asp:ListItem Value="1200">Grabador DVD</asp:ListItem>
             </asp:CheckBoxList>
-&nbsp;</label>
-        <br />
         <br />
         <asp:Button ID="btnCalcularPrecio" CssClass="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" runat="server" Text="Calcular Precio" OnClick="btnCalcularPrecio_Click" />
         <br />
