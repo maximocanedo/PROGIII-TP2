@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server" class="main-container">
         <h1>Elija su configuración</h1>
-        <label for="ddlCantidadMemoria">Seleccione cantidad de memoria deseada:</label>
+        <label for="ddlCantidadMemoria">Seleccione cantidad de memoria deseadra:</label>
             <br />
             <asp:DropDownList ID="ddlCantidadMemoria" runat="server" AutoPostBack="True">
                 <asp:ListItem Value="200">2 GB</asp:ListItem>
