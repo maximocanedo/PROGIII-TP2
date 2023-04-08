@@ -3,9 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace TrabajoPractico2 {
     public static class Util {
+
+        public static void FilterNumbersOnControl(TextBox sender, EventArgs e) {
+            // Obtener el texto actual del TextBox
+            string texto = sender.Text;
+            // Crear un nuevo string solo con caracteres numéricos
+            string textoNumerico = new string(texto.Where(c => Char.IsDigit(c)).ToArray());
+            // Establecer el nuevo texto en el TextBox
+            sender.Text = textoNumerico;
+        }
+
+
         /// <summary>
         /// Esta función se encarga de mostrar una alerta en el navegador con un mensaje específico. 
         /// La alerta se muestra mediante la ejecución de una función JavaScript que se registra en el cliente utilizando el ScriptManager de ASP.NET.
