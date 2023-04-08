@@ -6,29 +6,26 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" Font-Size="XX-Large" Text="Resumen"></asp:Label>
-            <br />
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre:&nbsp;
-            <asp:Label ID="lNombre" runat="server"></asp:Label>
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apellido:&nbsp;
-            <asp:Label ID="lApellido" runat="server"></asp:Label>
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zona :&nbsp;
-            <asp:Label ID="lZona" runat="server"></asp:Label>
-            <br />
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Los temas elegidos son :&nbsp;&nbsp;&nbsp;
+        <div class="row">
+            <h3>Resumen</h3>
+        </div>
+        <div class="row">
+            <span>Nombre: <asp:Label ID="lNombre" runat="server"></asp:Label></span>
+        </div>
+        <div class="row">
+            <span>Apellido: <asp:Label ID="lApellido" runat="server"></asp:Label></span>
+        </div>
+        <div class="row">
+            <span>Zona: <asp:Label ID="lZona" runat="server"></asp:Label></span>
+        </div>
+        <div class="row">
+            <span>Los temas elegidos son: </span>
+        </div>
+        <div class="row">
             <asp:Label ID="lTemas" runat="server"></asp:Label>
         </div>
     </form>

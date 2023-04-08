@@ -36,7 +36,7 @@ label.tb {
         margin: 4px;
     }
 
-    label.tb input {
+    label.tb input:not(type="checkbox") {
         width: calc(100% - 0px);
         border: 1px solid black;
         height: 24px;
@@ -67,9 +67,22 @@ table {
     border-collapse: collapse;
 }
 
-td, th {
+*:not(.table-cbl) tbody td, *:not(.table-cbl) thead th {
     border-collapse: collapse;
     border: 1px solid #CCC;
     border-spacing: 0px;
     padding: 4px 8px 4px 4px;
+}
+
+
+.table-cbl, .table-cbl * {
+    border: 0px !important;
+}
+.table-cbl td {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.table-cbl td * {
+    margin: 2px 4px;
 }
