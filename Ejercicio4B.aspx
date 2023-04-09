@@ -6,15 +6,16 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form2" runat="server">
-        <div>
-        </div>
-        <div style="margin-left: 160px">
-            <br />
+
+        <div id="container">
+        <div class="row">
             <asp:Label ID="lblMensaje" runat="server"></asp:Label>
-        </div>
+            </div>
+            </div>
     </form>
 </body>
 </html>

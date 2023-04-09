@@ -21,7 +21,15 @@ form {
         justify-content: center;
         align-items: center;
         margin: 10px;
+        
     }
+
+    .rowBottom {
+        padding: 8px;
+    }
+        .rowBottom * {
+            font-size: 16px;
+        }
 
 label.tb {
     display: flex;
@@ -86,3 +94,29 @@ table {
 .table-cbl td * {
     margin: 2px 4px;
 }
+
+#container{
+    background: lightgray;
+    width: 30%;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+#topcontainer {
+    background: lightgray;
+    width: 30%;
+    margin: 0px auto;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+header{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 10px;
+}
+

@@ -6,16 +6,15 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <p>
-            </p>
-            <div style="margin-left: 200px">
-                <asp:Label ID="lblMensajeInv" runat="server" Text="Usuario inválido. Ingreso no permitido."></asp:Label>
+         <div id="container">
+        <div class="row">
+             <asp:Label ID="Label1" runat="server" Text="Usuario inválido. Ingreso no permitido."></asp:Label>
             </div>
-        </div>
+            </div>
     </form>
 </body>
 </html>

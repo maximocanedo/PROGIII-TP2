@@ -6,19 +6,27 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:LinkButton ID="Rojo" runat="server" OnClick="Rojo_Click">Rojo</asp:LinkButton>
-            <br />
-            <br />
+    <form id="container" runat="server">
+        <div class="header">
+            <h2>Tercer ejercicio</h2>
         </div>
-        <asp:LinkButton ID="Azul" runat="server" OnClick="Azul_Click">Azul</asp:LinkButton>
-        <p>
-            <asp:LinkButton ID="Verde" runat="server" OnClick="LinkButton3_Click">Verde</asp:LinkButton>
-        </p>
-        <asp:Label ID="Label1" runat="server" Text="Texto coloreado"></asp:Label>
+        <div class="row">
+                <div class="row"> <asp:LinkButton ID="Rojo" runat="server" OnClick="Rojo_Click">Rojo</asp:LinkButton> </div>    
+            
+                  <div class="row"><asp:LinkButton ID="LinkButton1" runat="server" OnClick="Azul_Click">Azul</asp:LinkButton> </div>   
+            
+                    <div class="row"><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton3_Click">Verde</asp:LinkButton></div>                      
+        </div>
+
+        <div class="row rowBottom">   
+            <asp:Label ID="Label1" runat="server" Text="Texto coloreado"></asp:Label>
+       </div>
+        
+       
+            
     </form>
 </body>
 </html>
