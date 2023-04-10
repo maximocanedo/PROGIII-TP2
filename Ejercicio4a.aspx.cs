@@ -1,24 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace TrabajoPractico2 {
     public partial class Ejercicio4a : System.Web.UI.Page {
+        public const string USUARIO_VALIDO = "claudio";
+        public const string CLAVE_VALIDA = "casas";
         protected void Page_Load(object sender, EventArgs e) {
 
         }
-        private bool ValidarDatos(string user, string password) {
-            return user == "claudio" && password == "casas";
+        public static bool ValidarDatos(object user, object password) {
+            return (user != null && password != null) ? (
+                    (string)user == Ejercicio4a.USUARIO_VALIDO
+                    &&
+                    (string)password == Ejercicio4a.CLAVE_VALIDA
+                    ) : false;
         }
         protected void IniciarSesion() {
-            string usuario = txtUser.Text;
-            string clave = txtPass.Text;
-            if(ValidarDatos(usuario, clave)) {
+            string usuario = Server.HtmlEncode(txtUser.Text);
+            string clave = Server.HtmlEncode(txtPass.Text);
+            if (ValidarDatos(usuario, clave)) {
+                Session["Usuario"] = (string)usuario;
+                Session["Clave"] = (string)clave;
                 Server.Transfer("Ejercicio4b.aspx");
-            } else {
+            }
+            else {
                 Server.Transfer("Ejercicio4c.aspx");
             }
 

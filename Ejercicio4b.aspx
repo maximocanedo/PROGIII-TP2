@@ -28,7 +28,7 @@
     <div class="page-content">
         <form id="form1" runat="server" class="main-container">
             <div class="row">
-                <h3>¡Bienvenido a mi página Sr. Claudio!</h3>
+                <asp:Label ID="WelcomeLabel" runat="server" CssClass="title" Text=""></asp:Label>
             </div>
             <div class="row">
                 <asp:Button ID="BackButton" CssClass="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored" runat="server" Text="Volver" OnClick="BackButton_Click" />
@@ -36,6 +36,11 @@
         </form>
     </div>
   </main>
+    <style>
+        .row .title {
+            font-size: 16px;
+        }
+    </style>
 </div>
 </body>
 </html>
