@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Web.UI.WebControls;
 
 namespace TrabajoPractico2 {
     public partial class WebForm1 : System.Web.UI.Page {
@@ -21,7 +20,7 @@ namespace TrabajoPractico2 {
                 // El valor del cuadro de texto no se puede convertir a un número entero.
                 Util.Alert("El valor ingresado no se puede convertir a un número entero. ", this);
                 return;
-            } 
+            }
 
             // Calcular la cantidad total de productos.
             int cantidadTotal = cantProducto1 + cantProducto2;
