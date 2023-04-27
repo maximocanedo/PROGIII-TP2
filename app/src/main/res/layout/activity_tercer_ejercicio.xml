@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".TercerEjercicio">
 
+    <TextView
+        android:id="@+id/ej3txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Tercer Ejercicio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ej3btnRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#F44336"
+        android:text="Rojo"
+        app:layout_constraintEnd_toStartOf="@+id/ej3btnAzul"
+        app:layout_constraintTop_toBottomOf="@+id/ej3txtTitulo" />
+
+    <Button
+        android:id="@+id/ej3btnAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="48dp"
+        android:text="Azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej3txtTitulo" />
+
+    <Button
+        android:id="@+id/ej3btnVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Verde"
+        app:layout_constraintStart_toEndOf="@+id/ej3btnAzul"
+        app:layout_constraintTop_toBottomOf="@+id/ej3txtTitulo" />
+
+    <TextView
+        android:id="@+id/ej3txtColoreado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto coloreado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej3btnAzul" />
 </androidx.constraintlayout.widget.ConstraintLayout>
