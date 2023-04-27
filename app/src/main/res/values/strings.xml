@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">PROGIII-TP2</string>
+    <string name="app_name">Segundo Trabajo Práctico</string>
+    <string name="ej1titulo">Primer ejercicio</string>
+    <string name="ej2titulo">Segundo ejercicio</string>
+    <string name="ej3titulo">Tercer ejercicio</string>
+    <string name="ej4titulo">Cuarto ejercicio</string>
+    <string name="ej5titulo">Quinto ejercicio</string>
+    <string name="ej1descripcion">Generar un formulario en donde se deben ingresar dos productos y sus respectivas cantidades.</string>
+    <string name="ej2descripcion">Dos formularios. En el primer formulario se ingresan los datos personales y los temas elegidos. Al dar click en Ver Resumen se abre el segundo formulario con el Resumen de los datos del primer formulario.</string>
+    <string name="ej3descripcion">Seleccionar un color y aplicarlo sobre el texto inferior.</string>
+    <string name="ej4descripcion">Tres formularios, el principal, el válido y el del error. En el formulario principal se debe ingresar el usuario y la clave. Si el usuario ingresa “claudio” y clave “casas”, se cargará en otro formulario un mensaje de bienvenida. De lo contrario, se le avisará que los datos ingresados son incorrectos.</string>
+    <string name="ej5descripcion">Armar una página web para seleccionar los componentes de armado de una PC y generar el precio final.</string>
 </resources>

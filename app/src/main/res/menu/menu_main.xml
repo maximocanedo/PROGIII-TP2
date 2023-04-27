@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item
+        android2:title="Foro"
+        android2:id="@+id/root_foro_option"
+        android:showAsAction="ifRoom" />
+    <item
+        android2:id="@+id/root_rep_option"
+        android2:title="Repositorio"
+        android:showAsAction="never" />
+</menu>

@@ -3,7 +3,10 @@ package com.max.brownie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,7 +46,27 @@ public class MainActivity extends AppCompatActivity {
             Intent ejercicio = new Intent(MainActivity.this, QuintoEjercicio.class);
             startActivity(ejercicio);
         });
-
-
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.root_foro_option:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://frgp.cvg.utn.edu.ar/mod/forum/view.php?id=255178"));
+                startActivity(browserIntent);
+                return true;
+            case R.id.root_rep_option:
+                Intent browseGit = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/maximocanedo/PROGIII-TP2/tree/android"));
+                startActivity(browseGit);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }
