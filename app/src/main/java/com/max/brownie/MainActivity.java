@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnPrimerEjercicio, btnSegundoEjercicio, btnTercerEjercicio, btnCuartoEjercicio, btnQuintoEjercicio;
+    private Button btnPrimerEjercicio
+                 , btnSegundoEjercicio
+                 , btnTercerEjercicio
+                 , btnCuartoEjercicio
+                 , btnQuintoEjercicio;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
             Intent ejercicio = new Intent(MainActivity.this, PrimerEjercicio.class);
             startActivity(ejercicio);
         });
+        btnSegundoEjercicio.setOnClickListener(view -> {
+            Intent ejercicio = new Intent(MainActivity.this, SegundoEjercicio.class);
+            startActivity(ejercicio);
+        });
+        btnTercerEjercicio.setOnClickListener(view -> {
+
+        });
+        btnCuartoEjercicio.setEnabled(false);
+        btnQuintoEjercicio.setEnabled(false);
 
     }
 }
