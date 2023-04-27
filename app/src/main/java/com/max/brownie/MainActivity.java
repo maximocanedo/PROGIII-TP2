@@ -35,8 +35,13 @@ public class MainActivity extends AppCompatActivity {
             Intent ejercicio = new Intent(MainActivity.this, TercerEjercicio.class);
             startActivity(ejercicio);
         });
-        btnCuartoEjercicio.setEnabled(false);
-        btnQuintoEjercicio.setEnabled(false);
+        btnCuartoEjercicio.setOnClickListener(view -> {
+            Intent ejercicio = new Intent(MainActivity.this, CuartoEjercicioLogin.class);
+            startActivity(ejercicio);
+        });
+        btnQuintoEjercicio.setOnClickListener(view -> {
+            Intent ejercicio;
+        });
 
     }
 }
