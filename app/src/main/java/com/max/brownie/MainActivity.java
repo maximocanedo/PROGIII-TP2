@@ -40,8 +40,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(ejercicio);
         });
         btnQuintoEjercicio.setOnClickListener(view -> {
-            Intent ejercicio;
+            Intent ejercicio = new Intent(MainActivity.this, QuintoEjercicio.class);
+            startActivity(ejercicio);
         });
+
 
     }
 }

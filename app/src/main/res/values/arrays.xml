@@ -5,4 +5,9 @@
         <item>San Miguel</item>
         <item>Boedo</item>
     </array>
+    <array name="ej5_memoria">
+        <item>2 GB</item>
+        <item>4 GB</item>
+        <item>6 GB</item>
+    </array>
 </resources>
